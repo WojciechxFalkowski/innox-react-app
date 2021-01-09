@@ -5,7 +5,6 @@ import { Burger } from "components";
 import logo from "images/logo.png";
 const Navigation = ({ navigationTitles }) => {
   const [open, setOpen] = useState(false);
-  console.log("open?", open);
   const scrollToTop = () => {
     scroll.scrollToTop();
   };

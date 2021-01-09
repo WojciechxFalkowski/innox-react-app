@@ -1,5 +1,6 @@
 import React from "react";
-import { Section, Div, Wrapper, H1, Span, Button } from "./Home.css";
+import { Section, Div, Wrapper, H1, Span } from "./Home.css";
+import { Button } from "components";
 const Home = ({ id }) => {
   return (
     <Section id={id}>

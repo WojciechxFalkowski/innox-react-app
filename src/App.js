@@ -1,8 +1,9 @@
 import React from "react";
 import { Navigation } from "components";
-import { Home } from "pages";
+import { Home, About } from "pages";
 import { ThemeProvider } from "styled-components";
 import theme from "theme/theme";
+import { Main } from "./App.css";
 const App = () => {
   const navigationTitles = [
     "home",
@@ -16,89 +17,13 @@ const App = () => {
   ];
   return (
     <ThemeProvider theme={theme}>
-      <div id="beggining">
+      <header id="beggining">
         <Navigation navigationTitles={navigationTitles} />
-        <main>
-          <Home id={navigationTitles[0]} />
-
-          <div id={navigationTitles[1]}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-              distinctio consequatur? In repellat maiores earum aspernatur enim
-              aliquid numquam tenetur? Eaque impedit tempore aliquid dolore iste
-              illum harum labore ullam! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Odio, distinctio consequatur? In repellat
-              maiores earum aspernatur enim aliquid numquam tenetur? Eaque
-              impedit tempore aliquid dolore iste illum harum labore ullam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-              distinctio consequatur? In repellat maiores earum aspernatur enim
-              aliquid numquam tenetur? Eaque impedit tempore aliquid dolore iste
-              illum harum labore ullam! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Odio, distinctio consequatur? In repellat
-              maiores earum aspernatur enim aliquid numquam tenetur? Eaque
-              impedit tempore aliquid dolore iste illum harum labore ullam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-              distinctio consequatur? In repellat maiores earum aspernatur enim
-              aliquid numquam tenetur? Eaque impedit tempore aliquid dolore iste
-              illum harum labore ullam! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Odio, distinctio consequatur? In repellat
-              maiores earum aspernatur enim aliquid numquam tenetur? Eaque
-              impedit tempore aliquid dolore iste illum harum labore ullam!
-            </p>
-          </div>
-          <div id={navigationTitles[2]}>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-              distinctio consequatur? In repellat maiores earum aspernatur enim
-              aliquid numquam tenetur? Eaque impedit tempore aliquid dolore iste
-              illum harum labore ullam! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Odio, distinctio consequatur? In repellat
-              maiores earum aspernatur enim aliquid numquam tenetur? Eaque
-              impedit tempore aliquid dolore iste illum harum labore ullam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-              distinctio consequatur? In repellat maiores earum aspernatur enim
-              aliquid numquam tenetur? Eaque impedit tempore aliquid dolore iste
-              illum harum labore ullam! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Odio, distinctio consequatur? In repellat
-              maiores earum aspernatur enim aliquid numquam tenetur? Eaque
-              impedit tempore aliquid dolore iste illum harum labore ullam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-              distinctio consequatur? In repellat maiores earum aspernatur enim
-              aliquid numquam tenetur? Eaque impedit tempore aliquid dolore iste
-              illum harum labore ullam! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Odio, distinctio consequatur? In repellat
-              maiores earum aspernatur enim aliquid numquam tenetur? Eaque
-              impedit tempore aliquid dolore iste illum harum labore ullam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-              distinctio consequatur? In repellat maiores earum aspernatur enim
-              aliquid numquam tenetur? Eaque impedit tempore aliquid dolore iste
-              illum harum labore ullam! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Odio, distinctio consequatur? In repellat
-              maiores earum aspernatur enim aliquid numquam tenetur? Eaque
-              impedit tempore aliquid dolore iste illum harum labore ullam!
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
-              distinctio consequatur? In repellat maiores earum aspernatur enim
-              aliquid numquam tenetur? Eaque impedit tempore aliquid dolore iste
-              illum harum labore ullam! Lorem ipsum dolor sit amet consectetur,
-              adipisicing elit. Odio, distinctio consequatur? In repellat
-              maiores earum aspernatur enim aliquid numquam tenetur? Eaque
-              impedit tempore aliquid dolore iste illum harum labore ullam!
-            </p>
-          </div>
-        </main>
-      </div>
+        <Home id={navigationTitles[0]} />
+      </header>
+      <Main>
+        <About id={navigationTitles[1]} />
+      </Main>
     </ThemeProvider>
   );
 };

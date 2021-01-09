@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import manWithBike from "images/man-with-bike.png";
-import background from "images/background-image.png";
+import manWithBike from "images/home/man-with-bike.png";
+import background from "images/home/background-image.png";
 export const Section = styled.section`
   min-height: 100vh;
   background-image: url(${background});
@@ -41,10 +41,11 @@ export const Span = styled.span`
   font-weight: bold;
   font-size: 1.8rem;
 `;
-export const Button = styled.button`
-  color: ${({ theme }) => theme.colors.brown};
-  color: ${({ theme }) => theme.colors.brown};
-  padding: ${({ theme }) => `${theme.spacing.sm}px ${theme.spacing.mx}px`};
-  font-weight: bold;
-  cursor: pointer;
-`;
+// export const Button = styled.button`
+//   color: ${({ theme }) => theme.colors.brown};
+//   color: ${({ theme }) => theme.colors.brown};
+//   padding: ${({ theme }) => `${theme.spacing.sm}px ${theme.spacing.mx}px`};
+//   font-weight: bold;
+//   cursor: pointer;
+//   text-transform: uppercase;
+// `;

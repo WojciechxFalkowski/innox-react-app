@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-scroll";
 export const Nav = styled.nav`
   position: absolute;
-  width: 100vw;
+  width: 100%;
   max-width: ${({ theme }) => theme.breakpoints.bigDesktop}px;
   top: 40px;
   left: 50%;
@@ -28,7 +28,12 @@ export const StyledLink = styled(Link)`
   }
 `;
 export const Ul = styled.ul`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
   height: 0px;
+  background-color: rgba(120, 120, 120, 0.8);
   overflow: hidden;
   height: ${(props) => props.open && "240px"};
   text-align: center;
@@ -36,7 +41,10 @@ export const Ul = styled.ul`
   margin-block-start: unset;
   margin-block-end: unset;
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
-    display: flex;
+    flex-direction: unset;
+    align-items: unset;
+    justify-content: unset;
+    background-color: unset;
     margin-right: ${({ theme }) => theme.spacing.xl}px;
     height: unset;
   }
