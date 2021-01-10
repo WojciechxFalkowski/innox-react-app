@@ -8,6 +8,13 @@ export default createGlobalStyle`
     margin-block-end: unset;
     padding-inline-start: unset;
   }
+  button
+  {
+    cursor:pointer;
+    :focus {
+      outline: -webkit-focus-ring-color auto 1px;
+  }
+  }
   body
   {
     font-family:arial;
