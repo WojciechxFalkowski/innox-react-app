@@ -7,6 +7,7 @@ export default createGlobalStyle`
     margin-block-start:unset;
     margin-block-end: unset;
     padding-inline-start: unset;
+    box-sizing:border-box;
   }
   button
   {

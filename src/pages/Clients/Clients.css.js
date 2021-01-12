@@ -1,7 +1,10 @@
 import styled from "styled-components";
 export const Section = styled.section`
-  div div button {
-    line-height: 14px;
+  div {
+    div:nth-child(1) button {
+      line-height: 14px;
+      color: ${({ theme }) => theme.colors.brown};
+    }
   }
 `;
 export const ImageWrapper = styled.div`

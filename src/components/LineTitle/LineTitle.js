@@ -1,12 +1,11 @@
 import React from "react";
 import { Wrapper, Line } from "./LineTitle.css";
-import { Button } from "components";
-const LineTitle = ({ title }) => {
+const LineTitle = ({ lineTitle, button, children }) => {
   return (
     <Wrapper>
-      <Line />
-      <Button>{title}</Button>
-      <Line />
+      <Line {...lineTitle} />
+      {children}
+      <Line {...lineTitle} />
     </Wrapper>
   );
 };

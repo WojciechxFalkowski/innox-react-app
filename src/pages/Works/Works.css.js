@@ -7,7 +7,10 @@ export const Ul = styled.ul`
   display: flex;
   justify-content: space-around;
   margin: ${({ theme }) => theme.spacing.mx}px auto;
-  font-size: 12px;
+  font-size: 10px;
+  @media (min-width: ${({ theme }) => theme.breakpoints.phone}px) {
+    font-size: 12px;
+  }
   @media (min-width: ${({ theme }) => theme.breakpoints.landscapePhone}px) {
     font-size: 16px;
   }
@@ -47,7 +50,7 @@ export const Img = styled.img`
     width: calc(25% - ${({ theme }) => theme.spacing.sm * 2}px);
   }
 `;
-export const Button = styled(StyledButton)`
+export const BackgroundButton = styled(StyledButton)`
   margin: ${({ theme }) => theme.spacing.mx}px auto;
   background-color: ${({ theme }) => theme.colors.brown};
   color: ${({ theme }) => theme.colors.white};

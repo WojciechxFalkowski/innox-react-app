@@ -2,7 +2,7 @@ import React from "react";
 import Carousel from "styled-components-carousel";
 import theme from "theme/theme";
 import { Section, ImageWrapper } from "./Clients.css";
-import { LineTitle } from "components";
+import { LineTitle, Button } from "components";
 import apple from "images/clients/apple.png";
 import starbucks from "images/clients/starbucks.png";
 import intel from "images/clients/intel.png";
@@ -17,7 +17,9 @@ const Clients = ({ id }) => {
   ];
   return (
     <Section id={id}>
-      <LineTitle title="clients" />
+      <LineTitle>
+        <Button>{id}</Button>
+      </LineTitle>
       <Carousel
         breakpoints={[
           {

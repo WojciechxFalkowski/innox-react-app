@@ -20,7 +20,9 @@ import { Button } from "components";
 const About = ({ id }) => {
   return (
     <section id={id}>
-      <LineTitle title={id} />
+      <LineTitle>
+        <Button>{id}</Button>
+      </LineTitle>
       <Wrapper>
         <Image />
         <TextWrapper>
@@ -55,14 +57,14 @@ const About = ({ id }) => {
           </ImagesWrapper>
           <ButtonsWrapper>
             <Button
-              style={{
+              button={{
                 fontSize: "12px",
               }}
             >
               About Detail
             </Button>
             <Button
-              style={{
+              button={{
                 fontSize: "12px",
               }}
             >

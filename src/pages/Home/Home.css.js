@@ -22,30 +22,27 @@ export const Wrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     left: 70%;
   }
 `;
 export const H1 = styled.h1`
-  // display:none;
   color: ${({ theme }) => theme.colors.white};
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   white-space: nowrap;
   font-weight: 100;
+  @media (min-width: ${({ theme }) => theme.breakpoints.phone}px) {
+    font-size: 2.5rem;
+  }
 `;
 export const Span = styled.span`
   display: block;
   font-weight: bold;
-  font-size: 1.8rem;
+  font-size: 1rem;
+  @media (min-width: ${({ theme }) => theme.breakpoints.phone}px) {
+    font-size: 1.8rem;
+  }
 `;
-// export const Button = styled.button`
-//   color: ${({ theme }) => theme.colors.brown};
-//   color: ${({ theme }) => theme.colors.brown};
-//   padding: ${({ theme }) => `${theme.spacing.sm}px ${theme.spacing.mx}px`};
-//   font-weight: bold;
-//   cursor: pointer;
-//   text-transform: uppercase;
-// `;

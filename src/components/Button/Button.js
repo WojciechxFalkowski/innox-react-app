@@ -1,7 +1,7 @@
 import React from "react";
 import { StyledButton } from "./Button.css";
-const Button = ({ style, children }) => {
-  return <StyledButton style={{ ...style }}>{children}</StyledButton>;
+const Button = ({ button, children }) => {
+  return <StyledButton {...button}>{children}</StyledButton>;
 };
 
 export default Button;

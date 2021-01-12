@@ -6,9 +6,9 @@ import {
   ListButton,
   ImagesWrapper,
   Img,
-  Button,
+  BackgroundButton,
 } from "./Works.css";
-import { LineTitle } from "components";
+import { LineTitle, Button } from "components";
 import image1 from "images/works/image1.png";
 import image2 from "images/works/image2.png";
 import image3 from "images/works/image3.png";
@@ -90,7 +90,9 @@ const Works = ({ id }) => {
   };
   return (
     <Section id={id}>
-      <LineTitle title={id} />
+      <LineTitle>
+        <Button>{id}</Button>
+      </LineTitle>
       <Ul>
         {listItems.map((item) => (
           <Li key={item} onClick={() => setActiveCategory(item)}>
@@ -103,7 +105,11 @@ const Works = ({ id }) => {
           <Img key={item.text} src={item.image} alt={item.text} />
         ))}
       </ImagesWrapper>
-      {!isLoadedData && <Button onClick={handleLoadImages}>Load more</Button>}
+      {!isLoadedData && (
+        <BackgroundButton onClick={handleLoadImages}>
+          Load more
+        </BackgroundButton>
+      )}
     </Section>
   );
 };
