@@ -3,3 +3,4 @@ export { default as Burger } from "./Burger";
 export { default as Button } from "./Button";
 export { default as LineTitle } from "./LineTitle";
 export { default as Card } from "./Card";
+export { default as RoundIcon } from "./RoundIcon";

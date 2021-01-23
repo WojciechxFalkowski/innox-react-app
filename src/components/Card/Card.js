@@ -6,6 +6,7 @@ const Card = ({ image, title, text }) => {
   return (
     <Wrapper>
       <LineTitle
+        wrapperTitle={{ maxHeight: "100px" }}
         lineTitle={{ width: "calc(40% - 70px / 2)" }}
         button={{
           border: `2px solid ${theme.colors.brown}`,

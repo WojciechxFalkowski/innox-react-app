@@ -10,7 +10,7 @@ const theme = {
     desktop: "1024",
     tablet: "768",
     landscapePhone: "640",
-    phone: "320",
+    phone: "360",
   },
   colors: {
     white: "#fff",

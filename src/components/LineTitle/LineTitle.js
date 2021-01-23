@@ -1,8 +1,8 @@
 import React from "react";
 import { Wrapper, Line } from "./LineTitle.css";
-const LineTitle = ({ lineTitle, button, children }) => {
+const LineTitle = ({ wrapperTitle, lineTitle, children }) => {
   return (
-    <Wrapper>
+    <Wrapper {...wrapperTitle}>
       <Line {...lineTitle} />
       {children}
       <Line {...lineTitle} />

@@ -1,6 +1,6 @@
 import React from "react";
 import { Navigation } from "components";
-import { Home, About, Works, Clients, Services } from "pages";
+import { Home, About, Works, Clients, Services, OurTeam } from "pages";
 import { ThemeProvider } from "styled-components";
 import theme from "theme/theme";
 import { Main } from "./App.css";
@@ -11,7 +11,7 @@ const App = () => {
     "works",
     "clients",
     "services",
-    "team",
+    "our team",
     "blog",
     "contact",
   ];
@@ -26,6 +26,7 @@ const App = () => {
         <Works id={navigationTitles[2]} />
         <Clients id={navigationTitles[3]} />
         <Services id={navigationTitles[4]} />
+        <OurTeam id={navigationTitles[5]} />
       </Main>
     </ThemeProvider>
   );
