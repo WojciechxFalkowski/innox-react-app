@@ -1,0 +1,24 @@
+import styled, { keyframes } from "styled-components";
+
+const rotate360 = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+export const Spinner = styled.div`
+  animation: ${rotate360} 1s linear infinite;
+  margin: 0 auto;
+  transform: translateZ(0);
+  border-top: 2px solid ${({ theme }) => theme.colors.white};
+  border-right: 2px solid ${({ theme }) => theme.colors.white};
+  border-bottom: 2px solid ${({ theme }) => theme.colors.white};
+  border-left: 4px solid ${({ theme }) => theme.colors.brown};
+  background: transparent;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+`;

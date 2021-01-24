@@ -10,7 +10,8 @@ export const Wrapper = styled.div`
 export const Line = styled.div`
   width: ${({ width }) => (width ? width : "calc(40% - 100px / 2)")};
   height: 1px;
-  background-color: ${({ theme }) => theme.colors.brown};
+  background-color: ${({ theme, lineColor }) =>
+    lineColor ? lineColor : theme.colors.brown};
   @media (min-width: ${({ theme }) => theme.breakpoints.phone}px) {
     width: ${({ width }) => (width ? width : "calc(40% - 140px / 2)")};
   }

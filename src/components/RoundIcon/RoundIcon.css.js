@@ -7,7 +7,7 @@ export const IconWrapper = styled.a`
   border-radius: 50%;
   color: ${({ theme }) => theme.colors.white};
   transition: 0.3s;
-  font-size: 12px;
+  font-size: 14px;
   visibility: hidden;
   @media (min-width: ${({ theme }) => theme.breakpoints.phone}px) {
     visibility: visible;
@@ -19,5 +19,8 @@ export const IconWrapper = styled.a`
   &:hover {
     color: ${({ theme }) => theme.colors.brown};
     background-color: ${({ theme }) => theme.colors.white};
+  }
+  svg {
+    transform: translateY(2px);
   }
 `;
