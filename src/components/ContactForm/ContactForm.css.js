@@ -26,6 +26,7 @@ export const StyledTextArea = styled.textarea`
   padding: ${({ theme }) => `${theme.spacing.xs}px ${theme.spacing.sm}px`};
   min-height: 100px;
   border: 1px solid ${({ theme }) => theme.colors.brown};
+  resize: none;
 `;
 export const BackgroundButton = styled(StyledButton)`
   padding: ${({ theme }) => theme.spacing.sm}px;
