@@ -6,3 +6,5 @@ export { default as Card } from "./Card";
 export { default as RoundIcon } from "./RoundIcon";
 export { default as BlogCard } from "./BlogCard";
 export { default as LoadingIndicator } from "./LoadingIndicator";
+export { default as LocationMap } from "./LocationMap";
+export { default as ShowYourLocation } from "./ShowYourLocation";

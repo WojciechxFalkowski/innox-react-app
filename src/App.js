@@ -1,6 +1,15 @@
 import React from "react";
 import { Navigation } from "components";
-import { Home, About, Works, Clients, Services, OurTeam, Blog } from "pages";
+import {
+  Home,
+  About,
+  Works,
+  Clients,
+  Services,
+  OurTeam,
+  Blog,
+  Contact,
+} from "pages";
 import { ThemeProvider } from "styled-components";
 import theme from "theme/theme";
 import { Main } from "./App.css";
@@ -28,6 +37,7 @@ const App = () => {
         <Services id={navigationTitles[4]} />
         <OurTeam id={navigationTitles[5]} />
         <Blog id={navigationTitles[6]} />
+        <Contact id={navigationTitles[7]} />
       </Main>
     </ThemeProvider>
   );
