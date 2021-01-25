@@ -6,3 +6,4 @@ export { default as Services } from "./Services";
 export { default as OurTeam } from "./OurTeam";
 export { default as Blog } from "./Blog";
 export { default as Contact } from "./Contact";
+export { default as Footer } from "./Footer";

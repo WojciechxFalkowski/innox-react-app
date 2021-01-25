@@ -9,6 +9,7 @@ import {
   OurTeam,
   Blog,
   Contact,
+  Footer,
 } from "pages";
 import { ThemeProvider } from "styled-components";
 import theme from "theme/theme";
@@ -39,6 +40,7 @@ const App = () => {
         <Blog id={navigationTitles[6]} />
         <Contact id={navigationTitles[7]} />
       </Main>
+      <Footer />
     </ThemeProvider>
   );
 };

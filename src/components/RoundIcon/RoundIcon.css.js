@@ -1,7 +1,7 @@
 import styled from "styled-components";
 export const IconWrapper = styled.a`
-  // width: 35px;
-  // height: 35px;
+  max-width: 35px;
+  max-height: 35px;
   padding: ${({ theme }) => theme.spacing.sm / 2}px;
   border: 1px solid ${({ theme }) => theme.colors.white};
   border-radius: 50%;

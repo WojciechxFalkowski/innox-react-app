@@ -9,3 +9,4 @@ export { default as LoadingIndicator } from "./LoadingIndicator";
 export { default as LocationMap } from "./LocationMap";
 export { default as ShowYourLocation } from "./ShowYourLocation";
 export { default as ContactForm } from "./ContactForm";
+export { default as AdressInfo } from "./AdressInfo";

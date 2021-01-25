@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Form,
+  StyledLabel,
   StyledInput,
   StyledErrorParagraph,
   StyledTextArea,
@@ -17,7 +18,7 @@ const ContactForm = () => {
 
   return (
     <Form onSubmit={handleSubmit} noValidate>
-      <label htmlFor="name">
+      <StyledLabel htmlFor="name">
         <StyledInput
           id="name"
           type="text"
@@ -30,8 +31,8 @@ const ContactForm = () => {
         {errors.name && (
           <StyledErrorParagraph>{errors.name}</StyledErrorParagraph>
         )}
-      </label>
-      <label htmlFor="email">
+      </StyledLabel>
+      <StyledLabel htmlFor="email">
         <StyledInput
           id="email"
           type="email"
@@ -44,7 +45,7 @@ const ContactForm = () => {
         {errors.email && (
           <StyledErrorParagraph>{errors.email}</StyledErrorParagraph>
         )}
-      </label>
+      </StyledLabel>
       <StyledInput
         type="text"
         placeholder="Subject"
