@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Form,
+  StyledOneLineInputs,
   StyledLabel,
   StyledInput,
   StyledErrorParagraph,
@@ -18,34 +19,36 @@ const ContactForm = () => {
 
   return (
     <Form onSubmit={handleSubmit} noValidate>
-      <StyledLabel htmlFor="name">
-        <StyledInput
-          id="name"
-          type="text"
-          placeholder="Name *"
-          name="name"
-          value={values.name || ""}
-          onChange={handleChange}
-          required
-        />
-        {errors.name && (
-          <StyledErrorParagraph>{errors.name}</StyledErrorParagraph>
-        )}
-      </StyledLabel>
-      <StyledLabel htmlFor="email">
-        <StyledInput
-          id="email"
-          type="email"
-          placeholder="E-mail *"
-          name="email"
-          value={values.email || ""}
-          onChange={handleChange}
-          required
-        />
-        {errors.email && (
-          <StyledErrorParagraph>{errors.email}</StyledErrorParagraph>
-        )}
-      </StyledLabel>
+      <StyledOneLineInputs>
+        <StyledLabel htmlFor="name">
+          <StyledInput
+            id="name"
+            type="text"
+            placeholder="Name *"
+            name="name"
+            value={values.name || ""}
+            onChange={handleChange}
+            required
+          />
+          {errors.name && (
+            <StyledErrorParagraph>{errors.name}</StyledErrorParagraph>
+          )}
+        </StyledLabel>
+        <StyledLabel htmlFor="email">
+          <StyledInput
+            id="email"
+            type="email"
+            placeholder="E-mail *"
+            name="email"
+            value={values.email || ""}
+            onChange={handleChange}
+            required
+          />
+          {errors.email && (
+            <StyledErrorParagraph>{errors.email}</StyledErrorParagraph>
+          )}
+        </StyledLabel>
+      </StyledOneLineInputs>
       <StyledInput
         type="text"
         placeholder="Subject"

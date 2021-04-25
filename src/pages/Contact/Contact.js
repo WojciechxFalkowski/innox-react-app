@@ -21,12 +21,15 @@ const Contact = ({ id }) => {
       </LineTitle>
       <LocationMap />
       <Container>
-        <ContactFormWrapper>
+        <div>
           <H4>Please contact us</H4>
           <Paragraph>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
             quo accusamus veniam recusandae.
           </Paragraph>
+        </div>
+
+        <ContactFormWrapper>
           <ContactForm />
         </ContactFormWrapper>
         <AdressInfo />

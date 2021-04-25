@@ -8,7 +8,6 @@ import {
   ImageNameText,
   ImagePositionText,
   IconsWrapper,
-  Img,
   Card,
   CoffeeImg,
   Paragraph,
@@ -20,13 +19,11 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { LineTitle, Button, RoundIcon } from "components";
 import img1 from "images/ourTeam/img1.png";
-import img2 from "images/ourTeam/img2.png";
 import img3 from "images/ourTeam/img3.png";
 import img4 from "images/ourTeam/img4.png";
 import img5 from "images/ourTeam/img5.png";
 import img6 from "images/ourTeam/img6.png";
 import img7 from "images/ourTeam/img7.png";
-import img8 from "images/ourTeam/img8.png";
 import coffee from "images/ourTeam/coffee.svg";
 const OurTeam = ({ id }) => {
   const profilesImages = [

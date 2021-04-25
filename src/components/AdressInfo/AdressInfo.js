@@ -13,10 +13,10 @@ const AdressInfo = () => {
   return (
     <StyledAdress>
       <StyledParagraph>
-        Get in Touch <StyledSpan>Mon-Fri 09:00 - 17:00</StyledSpan>
+        Get in Touch <StyledSpan>Mon-Fri: 09:00 - 17:00</StyledSpan>
       </StyledParagraph>
       <StyledParagraph>
-        Breakfast <StyledSpan>Mon-Fri 09:30 - 10:30</StyledSpan>
+        Breakfast <StyledSpan>Mon-Fri: 09:30 - 10:30</StyledSpan>
       </StyledParagraph>
       <StyledInfoWrapper>
         <StyledRoundIcon href="#location">

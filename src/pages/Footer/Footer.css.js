@@ -5,7 +5,8 @@ export const StyledFooter = styled.footer`
   justify-content: center;
   align-items: center;
   min-height: 30vh;
-  padding: ${({ theme }) => theme.spacing.mx}px 0;
+  padding: ${({ theme }) => theme.spacing.xl}px 0;
+  margin-top: ${({ theme }) => `${theme.spacing.xl}px`};
   background-color: ${({ theme }) => theme.colors.brown};
 `;
 export const IconsWrapper = styled.div`

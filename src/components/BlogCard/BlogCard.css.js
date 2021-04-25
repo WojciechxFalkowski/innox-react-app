@@ -1,16 +1,20 @@
 import styled from "styled-components";
 export const ImageWrapper = styled.div`
   width: 100%;
-  height: ${(100 / 5) * 2}vw;
+  height: ${(100 / 4) * 2}vw;
   margin-top: ${({ theme }) => theme.spacing.mx}px;
   background-image: url(${(props) => props.image});
   background-size: 100% 100%;
+  @media (min-width: ${({ theme }) => theme.breakpoints.landscapePhone}px) {
+    height: ${(100 / 5) * 2}vw;
+  }
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
+    height: ${(100 / 6) * 2}vw;
     width: ${({ theme }) => `calc(50% - ${theme.spacing.sm}px * 2)`};
     margin: ${({ theme }) => theme.spacing.sm}px;
   }
   @media (min-width: ${({ theme }) => theme.breakpoints.desktop}px) {
-    height: ${(50 / 5) * 2}vw;
+    height: ${100 / 3}vh;
   }
 `;
 export const HoverWrapper = styled.div`

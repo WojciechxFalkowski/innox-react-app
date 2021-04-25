@@ -1,14 +1,16 @@
 import styled from "styled-components";
 export const StyledAdress = styled.div`
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-around;
-  // min-height: 400px;
   width: 250px;
   margin: 0 auto;
+  @media (min-width: ${({ theme }) => theme.breakpoints.landscapePhone}px) {
+    padding-left: 16px;
+  }
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     min-height: unset;
     align-self: center;
+  }
+  p:nth-child(1) {
+    margin-top: 0;
   }
 `;
 export const StyledParagraph = styled.p`
@@ -16,7 +18,7 @@ export const StyledParagraph = styled.p`
   font-weight: bold;
   text-transform: uppercase;
   flex-basis: 60%;
-  margin: ${({ theme }) => theme.spacing.sm}px 0;
+  margin: ${({ theme }) => theme.spacing.mx}px 0;
 `;
 export const StyledSpan = styled.span`
   display: block;
@@ -25,7 +27,7 @@ export const StyledSpan = styled.span`
   font-weight: normal;
   font-size: 14px;
   opacity: 0.7;
-  text-transform: capitalize;
+  text-transform: none;
 `;
 export const StyledInfoWrapper = styled.div`
   display: flex;

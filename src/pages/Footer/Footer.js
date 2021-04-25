@@ -20,7 +20,7 @@ const Footer = () => {
   ];
   return (
     <StyledFooter>
-      <a href="">
+      <a href="#footer" alt="">
         <img src={logo} alt="innox" />
       </a>
       <IconsWrapper>

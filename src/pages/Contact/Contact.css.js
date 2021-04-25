@@ -8,8 +8,10 @@ export const Container = styled.div`
   }
 `;
 export const ContactFormWrapper = styled.div`
+  margin: 0 auto;
   @media (min-width: ${({ theme }) => theme.breakpoints.tablet}px) {
     flex-basis: 60%;
+    margin: unset;
   }
 `;
 export const H4 = styled.h4`
