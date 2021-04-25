@@ -15,11 +15,11 @@
 ### Screenshots:
 
 <p align="center">
-  <img src="https://wojciechxfalkowski.github.io/innox-react-app/images/home.png?raw=true" alt="Home page"/>
+  <img src="https://wojciechxfalkowski.github.io/innox-react-app/tree/main/images/home.png?raw=true" alt="Home page"/>
 </p>
 <p align="center">
-  <img src="https://wojciechxfalkowski.github.io/innox-react-app/images/works.png?raw=true" alt="Works"/>
+  <img src="https://wojciechxfalkowski.github.io/innox-react-app/tree/main/images/works.png?raw=true" alt="Works"/>
 </p>
 <p align="center">
-  <img src="https://wojciechxfalkowski.github.io/innox-react-app/images/contact.png?raw=true" alt="Contact"/>
+  <img src="https://wojciechxfalkowski.github.io/innox-react-app/tree/main/images/contact.png?raw=true" alt="Contact"/>
 </p>
